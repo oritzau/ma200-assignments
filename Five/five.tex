@@ -1,0 +1,327 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\title{MA200 Assignment 6}
+\author{Owen Ritzau}
+\date{March 10th, 2023}
+
+\begin{document}
+\maketitle
+
+\section * {3.1}
+  \begin{enumerate}
+    \item[2)]
+      $\begin{bmatrix*}[r]
+      0 & 4 & 1\\
+      5 & -3 & 0\\
+      2 & 3 & 1
+      \end{bmatrix*} \rightarrow 0\cdot(-3\cdot1-3\cdot0)-
+      4\cdot(5\cdot1-2\cdot0)+1\cdot(5\cdot3-2\cdot-3)$ 
+
+      $=0-20+21=1$ 
+    \item[6)]
+      $\begin{bmatrix*}[r]
+      5 & -2 &2\\
+      0 & 3 & -3\\
+      2 & -4 & 7
+      \end{bmatrix*} \rightarrow 5\cdot(3\cdot7-(-4\cdot-3))+
+      2\cdot(0\cdot7-2\cdot-3)+2\cdot(0\cdot-4-2\cdot3)$
+
+      $=5\cdot(21-12)+2\cdot(0+6)+2\cdot(0-6)=45+12-12=45$
+
+    \item[10)]
+      $A = \begin{bmatrix*}[r]
+      1&-2&5&2\\
+      0&0&3&0\\
+      2&-4&-3&5\\
+      2&0&3&5
+      \end{bmatrix*}\rightarrow
+      \begin{bmatrix*}[r]
+      0&0&3&0\\
+      1&-2&5&2\\
+      2&-4&-3&5\\
+      2&0&3&5
+      \end{bmatrix*}$
+
+      $det(A) = 0\cdot A_{11}+0\cdot A_{21}+
+      3\cdot 
+      \begin{bmatrix*}[r]
+      1&-2&2\\
+      2&-4&5\\
+      2&0&5
+      \end{bmatrix*}
+      +0\cdot A_{41}$
+      
+      $3\cdot
+      \begin{bmatrix*}[r]
+      1&-2&2\\
+      2&-4&5\\
+      2&0&5
+      \end{bmatrix*}
+      = 3\cdot(2(-10+8)-0(5-4)+5(-4+4))=3\cdot-4=-12$
+
+    \item[12)]
+      $A = 
+      \begin{bmatrix*}[r]
+        3&0&0&0\\
+        7&-2&0&0\\
+        2&6&3&0\\
+        3&-8&4&-3
+      \end{bmatrix*}$
+
+      $det(A) = 3\cdot
+      \begin{bmatrix*}[r]
+        -2&0&0\\
+        6&3&0\\
+        -8&4&-3
+      \end{bmatrix*}
+      +0\cdot A_{21}+0\cdot A_{31}+0\cdot A_{41}$
+
+      $=3\cdot(-2\cdot(-9-0)-0+0) = 54$ 
+
+  \end{enumerate}
+
+  \section * {3.2}
+  \begin{enumerate}
+    \item[8)]
+      $det(A) = 1\cdot\begin{bmatrix*}[r]
+        1&3&2&-4\\
+        0&1&2&-5\\
+        2&7&6&-3\\
+        -3&-10&-7&2
+      \end{bmatrix*}
+      = 1\cdot\begin{bmatrix*}[r]
+        1&3&2&-4\\
+        0&1&2&-5\\
+        0&1&2&5\\
+        0&-1&-1&-10
+      \end{bmatrix*}$
+
+      $=1\cdot\begin{bmatrix*}[r]
+        1&3&2&-4\\
+        0&1&2&-5\\
+        0&0&1&-5\\
+        0&-1&-1&-10
+        \end{bmatrix*}=1\cdot\begin{bmatrix*}[r]
+        1&3&2&-4\\
+        0&1&2&-5\\
+        0&0&1&-5\\
+        0&0&0&-10
+        \end{bmatrix*}=1\cdot1\cdot1\cdot-10=-10$
+
+    \item[12)]
+    $
+      A=\begin{bmatrix*}[r]
+        -1&2&3&0\\
+        3&4&3&0\\
+        11&4&6&6\\
+        4&2&4&3
+      \end{bmatrix*}\rightarrow
+      \begin{bmatrix*}[r]
+        -1&2&3&0\\
+        3&4&3&0\\
+        3&0&-2&0\\
+        4&2&4&3
+      \end{bmatrix*}
+    $
+
+    $
+      det(A)=3\cdot\begin{bmatrix*}[r]
+        -1&2&3\\
+          3&4&3\\
+          3&0&-2\\
+        \end{bmatrix*}
+      =3\cdot2=6  
+    $
+
+  \item[14)]
+  $
+  A=\begin{bmatrix*}[r]
+    1&5&4&1\\
+    0&-2&-4&0\\
+    3&5&4&1\\
+    -6&5&5&0\\
+  \end{bmatrix*}\rightarrow
+  \begin{bmatrix*}[r]
+    1&5&4&1\\
+    0&-2&-4&0\\
+    2&0&0&0\\
+    -6&5&5&0\\
+  \end{bmatrix*}
+  $
+
+  $
+  det(A)=1\cdot\begin{bmatrix*}[r]
+    0&-2&-4\\
+    2&0&0\\
+    -6&5&5\\
+    \end{bmatrix*}=1\cdot2\cdot\begin{bmatrix*}[r]
+      -2&-4\\
+      5&5\\
+    \end{bmatrix*}=20
+  $
+
+  \item[24)]
+  $
+    A=\begin{bmatrix*}[r]
+      4&-7&-3\\
+      6&0&-5\\
+      2&7&-2
+      \end{bmatrix*}\rightarrow\begin{bmatrix*}[r]
+      4&-7&-3\\
+      6&0&-5\\
+      6&0&-5
+      \end{bmatrix*}
+  $
+
+    $det(A)=7\cdot0=0$, therefore the set of vectors 
+    composed of the columns of $A$ is not linearly 
+    independent.
+  \item[26)]
+  $
+    A=\begin{bmatrix*}[r]
+      3&2&-2&0\\
+      5&-6&-1&0\\
+      -6&0&3&0\\
+      4&7&0&-2\\
+    \end{bmatrix*}
+  $
+
+    $det(A)=-2\cdot\begin{bmatrix*}[r]
+      3&2&-2\\
+      5&-6&-1\\
+      -6&0&3\\
+    \end{bmatrix*}=2\cdot-3\neq0$, therefore the set of vectors
+    composed of the columns of $A$ is linearly independent.
+    \end{enumerate}
+  \section * {4.1}
+    \begin{enumerate}
+    \item[6)]
+      Let W be the set of all polynomials of form $a+t^2$. If
+      $w_1=1+t^2$ and $w_2=2+t^2$, then $w_1+w_2=3+2t^2$, which
+      is not of the form $a+t^2$. Therefore, W does not have
+      closure under vector addition and is not a subspace
+
+    \item[8)]
+      This is a subspace, $w_1+w_2=w_3$ such that $w_3(0)=0$, 
+      $0\cdot0=0$, and $0+0=0$
+
+    \item[12)]
+      $W=s\cdot\begin{bmatrix*}[r]
+        1\\1\\2\end{bmatrix*}
+      +t\cdot\begin{bmatrix*}[r]
+      3\\-1\\-1\\4\end{bmatrix*}$, $W=$ span
+      $\left\{\begin{bmatrix*}[r]
+        1\\1\\2\end{bmatrix*}, \begin{bmatrix*}[r]
+        3\\-1\\-1\\4\end{bmatrix*}\right\}$
+
+    \item[14)]
+      If $W$ is in the subspace spanned by $\mathbf{v_1, 
+      v_2, v_3}$, then $W$ can be expressed as a linear 
+      combination of those vectors.
+
+      $\begin{bmatrix*}[r]
+        1&2&4&8\\
+        0&1&2&4\\
+        -1&3&6&7\\
+        \end{bmatrix*}\rightarrow\begin{bmatrix*}[r]
+          1&0&0&0\\
+          0&1&2&4\\
+          0&0&0&1\\
+        \end{bmatrix*}$. The system is inconsistent, so W is
+        in the span\{$\mathbf{v_1, v_2, v_3}$\}.
+
+    \item[16)]
+      $-a + 1 = 0$. $a-6b=0$, therefore 
+      $a=1$ and $b=\frac{1}{6}$. $2\cdot\frac{1}{6}-2\neq0$, 
+      therefore the zero vector doesn't exist in W and W 
+      is not a vector space.
+
+    \end{enumerate}
+
+  \section * {4.2}
+  \begin{enumerate}
+    \item[2)]
+      $A\cdot w=\begin{bmatrix*}[r]
+        5&21&19\\
+        13&23&2\\
+        8&14&1\\
+        \end{bmatrix*}\cdot\begin{bmatrix*}[r]
+          5\\-3\\2\\
+        \end{bmatrix*}
+        =\begin{bmatrix*}[r]
+          0\\0\\0\\
+        \end{bmatrix*}
+      $, therefore $w$ is in Nul $A$.
+
+    \item[4)]
+      $\begin{bmatrix*}[r]
+        1&-6&4&0&0\\
+        0&0&2&0&0\\
+        \end{bmatrix*}\rightarrow\begin{bmatrix*}[r]
+          1&-6&4&0&0\\
+          0&0&1&0&0\\
+        \end{bmatrix*}$
+
+      $\begin{bmatrix*}[r]
+        x_1\\x_2\\x_3\\x_4\end{bmatrix*}
+        =\begin{bmatrix*}
+          6x_2-4x_3\\
+          x_2\\
+          0\\
+          x_4\\
+        \end{bmatrix*} 
+        =x_2\cdot\begin{bmatrix*}
+          6\\1\\0\\0\end{bmatrix*}
+          +x_4\cdot\begin{bmatrix*}[r]
+          -4\\0\\0\\1\end{bmatrix*}$
+
+      The vectors that span Nul $A$ are $\begin{bmatrix*}
+      6\\1\\0\\0\end{bmatrix*}$ and $\begin{bmatrix*}[r]
+      -4\\0\\0\\1\end{bmatrix*}$
+
+    \item[6)] 
+      $x_1 = -5x_2+4x_3+3x_4-x_5$
+
+      $x_2 = 2x_3-x_4$
+
+      $\begin{bmatrix*}[r]
+        x_1\\x_2\\x_3\\x_4\\x_5\end{bmatrix*}
+      =x_3\cdot\begin{bmatrix*}[r]
+      4\\2\\1\\0\\0\\\end{bmatrix*}
+      +x_4\cdot\begin{bmatrix*}[r]
+      3\\-1\\0\\1\\0\end{bmatrix*}
+      +x_5\cdot\begin{bmatrix*}[r]
+      -1\\0\\0\\0\\1\end{bmatrix*}$
+
+      The vectors that span Nul $A$ are $\begin{bmatrix*}[r]
+      4\\2\\1\\0\\0\\\end{bmatrix*}$, $\begin{bmatrix*}[r]
+      3\\-1\\0\\1\\0\end{bmatrix*}$, $\begin{bmatrix*}[r]
+      -1\\0\\0\\0\\1\end{bmatrix*}$
+    \item[8)]
+      If $W$ is a vector space, the zero vector 
+      $\begin{bmatrix*}[r]r\\s\\t\end{bmatrix*}=
+      \begin{bmatrix*}[r]0\\0\\0\end{bmatrix*}$ must exist 
+      inside $W$. $\begin{bmatrix*}[r]0\\0\\0\end{bmatrix*}$
+      does not satisfy the constraint that 
+      $5r-1=s+2t$, as $-1\neq0$. 
+
+      Therefore, $W$ is not a 
+      vector space.
+    \item[12)]
+      If $W$ is a vector space, the zero vector 
+      $\begin{bmatrix*}b-5d\\2b\\2d+1\\d\end{bmatrix*}=
+      \begin{bmatrix*}0\\0\\0\\0\end{bmatrix*}$ must exist
+      inside 
+
+      $W$. Both $d$ and $2d+1$ cannot be equal to zero 
+      simultaneously, therefore the zero vector cannot exist
+      inside $W$ and $W$ is not a vector space.
+
+  \end{enumerate}
+  
+
+\end{document}
+
