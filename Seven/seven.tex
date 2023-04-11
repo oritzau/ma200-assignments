@@ -1,0 +1,139 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\title{Assignment 7}
+\author{Owen Ritzau}
+\date{April 8th, 2023}
+
+\begin{document}
+\maketitle
+\section* {5.1}
+\begin{enumerate}
+  \item[2)]
+    $\lambda = 2$ is an eigenvalue of $\begin{bmatrix*}[r]
+      7 & 3 \\
+      3 & -1 \\
+    \end{bmatrix*}$ if $A-2 I_2=0$ 
+    
+    $A-2 I_2=\begin{bmatrix*}[r]
+      5 & 3\\
+      3 & -3 \\
+    \end{bmatrix*}$
+
+    $det(A) = 5(-3) - (3\cdot3) \neq 0$, therefore 
+    $\lambda$ is not an eigenvalue of $A$
+
+  \item[4)]
+    $\begin{bmatrix*}
+      -1 + \sqrt{2} \\
+      1 \\
+    \end{bmatrix*}$ is an eigenvector of $A$ if 
+    $\begin{bmatrix*}
+      2 & 1 \\
+      1 & 4 \\
+    \end{bmatrix*}\begin{bmatrix*}
+      -1 + \sqrt{2} \\
+      1 \\
+    \end{bmatrix*} = \lambda \begin{bmatrix*}
+      -1 + \sqrt{2} \\
+      1 \\
+    \end{bmatrix*}$
+
+    $\begin{bmatrix*}
+      2 & 1 \\
+      1 & 4 \\
+    \end{bmatrix*}\begin{bmatrix*}
+      -1 + \sqrt{2} \\
+      1 \\
+    \end{bmatrix*} = 
+    \begin{bmatrix}
+      2(-1 + \sqrt{2}) + 1 \\
+      -1 + \sqrt{2} + 4 \\
+    \end{bmatrix} \approx 4.4142 \cdot \begin{bmatrix*}
+      -1 + \sqrt{2} \\
+      1 \\
+    \end{bmatrix*}$ 
+
+    Therefore, $\begin{bmatrix*}
+      -1 + \sqrt{2} \\
+      1 \\
+    \end{bmatrix*}$ is an eigenvector of A with an 
+    eigenvalue of 4.4142
+
+  \item[8)]
+    $det\begin{bmatrix*}[r]
+      -2 & 2 & 2 \\
+      3 & -5 & 1 \\
+      0 & 1 & -2 \\
+    \end{bmatrix*} = 0$ therefore $\lambda = 3$ is an 
+    eigenvalue of $A$. 
+    
+    $\begin{bmatrix*}[r]
+      -2 & 2 & 2 & 0\\
+      3 & -5 & 1 & 0\\
+      0 & 1 & -2 & 0\\
+    \end{bmatrix*} \rightarrow \begin{bmatrix*}[r]
+      1 & 0 & -3 & 0\\
+      0 & 1 & -2 & 0\\
+      0 & 0 & 0 & 0\\
+    \end{bmatrix*} \rightarrow
+    x_3\begin{bmatrix*}[r]
+      3 \\ 2 \\ 1 
+    \end{bmatrix*}$
+
+    Any vector of the form $x_3\begin{bmatrix*}[r]
+      3 \\ 2 \\ 1 
+    \end{bmatrix*}$ where $x_3 \neq 0$ is an eigenvector of
+    $A$.
+
+  \item[10)]
+    $A - \lambda I_2 = \begin{bmatrix*}[r]
+      6 & -9 \\
+      4 & -6 \\
+    \end{bmatrix*}$
+
+    $\begin{bmatrix*}[r]
+      6 & -9 & 0\\
+      4 & -6 & 0\\
+    \end{bmatrix*} \rightarrow \begin{bmatrix*}[r]
+      1 & -\frac{3}{2} & 0\\
+      0 & 0 & 0\\
+    \end{bmatrix*}$
+
+    The basis for the eigenspace of $A$ is 
+    $\left\{\begin{bmatrix*}[r]
+        \frac{3}{2} \\
+        1\\
+    \end{bmatrix*}\right\}$
+
+  \item[12)]
+    $A - I_2 = 
+    \begin{bmatrix*}[r]
+      6 & 4 \\
+      -3 & -2 \\
+    \end{bmatrix*}$ 
+
+    $A - 5I_2 = 
+    \begin{bmatrix*}[r]
+      2 & 4 \\
+      -3 & -6 \\
+    \end{bmatrix*}$
+
+    $\lambda = 1$, basis $= \left\{
+      \begin{bmatrix*}[r]
+        -\frac{2}{3} \\
+        1 \\
+      \end{bmatrix*}
+    \right\}$, $\lambda = 5$, basis $=\left\{
+      \begin{bmatrix*}[r]
+        -2 \\ 
+        1 \\
+      \end{bmatrix*}
+    \right\}$
+
+  \item[16)]
+
+\end{enumerate}
+\end{document}
