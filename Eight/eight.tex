@@ -1,0 +1,96 @@
+\documentclass{article}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{mathtools}
+
+\title{Assignment 8}
+\author{Owen Ritzau}
+\date{April 17th, 2023}
+
+\begin{document}
+\maketitle
+\section * {5.3}
+\begin{enumerate}
+  \item[4)]
+    $A^k = \begin{bmatrix*}[r]
+      3 & 4 \\
+      1 & 1 \\
+    \end{bmatrix*} \begin{bmatrix*}[r]
+      2^k & 0 \\
+      0 & 1^k \\
+    \end{bmatrix*} \begin{bmatrix*}[r]
+      -1 & 4 \\
+      0 & -3 \\
+    \end{bmatrix*} = \begin{bmatrix*}[r]
+      -3(2^k) & 4(3(2^k)) - 3(4^k) \\
+      -2^k & 4(2^k) - 3(1^k) \\
+    \end{bmatrix*}$
+
+  \item[6)]
+    Eigenvalues: $\lambda = 5, 4$ 
+    Basis: $\left\{
+      \begin{bmatrix*}[r]
+      -2 \\ 0 \\ 1 \end{bmatrix*},
+      \begin{bmatrix*}[r]
+      0 \\ 1 \\ 0 \end{bmatrix*},
+      \begin{bmatrix*}[r]
+      -1 \\ 2 \\ 0 \end{bmatrix*}
+    \right\}$
+
+  \item[10)]
+    $P = \begin{bmatrix*}[r]
+      1 & -\frac{3}{4} \\
+      1 & 1 \\
+    \end{bmatrix*} 
+    D = \begin{bmatrix*}[r]
+      5 & 0 \\
+      0 & -2 \\
+    \end{bmatrix*}$ 
+  \item[12)]
+    $P = \begin{bmatrix*}[r]
+      1 & -1 & -1 \\ 
+      1 & 1 & 0 \\ 
+      1 & 0 & 1 \\
+    \end{bmatrix*}
+    D = \begin{bmatrix*}[r]
+      8 & 0 & 0 \\
+      0 & 2 & 0 \\
+      0 & 0 & 2 \\
+    \end{bmatrix*}$
+
+  \item[14)]
+    $P = \begin{bmatrix*}[r]
+      0 & -2 & 0 \\
+      1 & 0 & 1 \\
+      0 & 1 & 1 \\
+    \end{bmatrix*}
+    D = \begin{bmatrix*}[r]
+      5 & 0 & 0 \\
+      0 & 5 & 0 \\
+      0 & 0 & 4 \\
+    \end{bmatrix*}$
+
+  \item[16)]
+    Not diagonalizable
+  
+  \item[22)]
+    \begin{enumerate}
+    \item
+      False, for a matrix to be diagonalizable it must have 
+      linearly independent eigenvectors
+    \item 
+      False, eigenvalues do not need to be unique
+
+    \item
+      True, this formula can be derived from the 
+      $A = PDP^{-1}$ formula for diagonals by multiplying both
+      sides by $P$
+    \item 
+      False, invertability does not affect diagonalizability
+    \end{enumerate}
+
+  \item[22)]
+    $A$ is not diagonalizable, as the dimensions of its
+    eigenspaces need to sum to 3 but only sum to 2
+\end{enumerate}
+\end{document}
